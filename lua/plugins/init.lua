@@ -45,10 +45,14 @@ require("lazy").setup({
 
 	"onsails/lspkind.nvim",
 
+	"numToStr/Comment.nvim",
+	"JoosepAlviste/nvim-ts-context-commentstring",
+
 	{'nvimdev/lspsaga.nvim', config = function()
 		require('lspsaga').setup({})
 		end
 	},
+	"jwalton512/vim-blade",
 
 	"christoomey/vim-tmux-navigator",
 	"kdheepak/lazygit.nvim",

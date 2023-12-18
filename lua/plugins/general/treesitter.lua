@@ -19,18 +19,11 @@ require('nvim-treesitter.configs').setup {
 		enable = true
 	},
 	autotag = { enable = true },
-	-- ensure these language parsers are installed
-	context_commentstring = {
-		enable = true,
-		enable_autocmd = false,
-		config = {
-			lua = '-- %s'
-		}
-	},
+
 }
 
 require('ufo').setup({
-    provider_selector = function(bufnr, filetype, buftype)
-        return {'treesitter', 'indent'}
-    end
+	provider_selector = function(bufnr, filetype, buftype)
+		return {'treesitter', 'indent'}
+	end
 })

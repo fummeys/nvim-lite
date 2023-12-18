@@ -38,6 +38,18 @@ vim.api.nvim_create_autocmd("LspAttach", {
 	end,
 })
 
+vim.cmd([[ autocmd BufRead,BufNewfile *.conf set filetype=nginx ]])
+vim.cmd([[ autocmd BufRead,BufNewfile *.blade.php set filetype=blade ]])
+
+config.nginx = {
+	default_config = {
+		cmd = { "nginx-language-server" },
+		filetypes = { "nginx" },
+		root_dir = function(fname)
+			return nvim_lsp.util.find_git_ancestor(fname)
+		end,
+	},
+}
 
 nvim_lsp.lua_ls.setup({
 	capabilities = capabilities,
@@ -45,7 +57,68 @@ nvim_lsp.lua_ls.setup({
 		Lua = {
 			diagnostics = {
 				globals = { "vim", "require" },
-			},
+			}
+		}
+	}
+})
+
+nvim_lsp.nginx.setup({
+	capabilities = capabilities
+})
+
+nvim_lsp.html.setup({
+	capabilities = capabilities,
+	filetypes = { "html", "blade"}
+})
+
+nvim_lsp.cssls.setup({
+	capabilities = capabilities,
+	settings = {
+		css = {
+			validate = true,
+			lint = {
+				unknownAtRules = "ignore"
+			}
 		},
-	},
+		scss = {
+			validate = true,
+			lint = {
+				unknownAtRules = "ignore"
+			}
+		},
+		less = {
+			validate = true,
+			lint = {
+				unknownAtRules = "ignore"
+			}
+		}
+	}
+})
+
+nvim_lsp.tsserver.setup({
+	capabilities = capabilities
+})
+
+nvim_lsp.bashls.setup({
+	capabilities = capabilities
+})
+
+nvim_lsp.dockerls.setup({
+	capabilities = capabilities
+})
+
+nvim_lsp.jsonls.setup({
+	capabilities = capabilities
+})
+
+nvim_lsp.yamlls.setup({
+	capabilities = capabilities
+})
+
+nvim_lsp.sqlls.setup({
+	capabilities = capabilities
+})
+
+nvim_lsp.intelephense.setup({
+	capabilities = capabilities
 })

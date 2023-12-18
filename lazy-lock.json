@@ -1,4 +1,5 @@
 {
+  "Comment.nvim": { "branch": "master", "commit": "0236521ea582747b58869cb72f70ccfa967d2e89" },
   "cmp-buffer": { "branch": "main", "commit": "3022dbc9166796b644a841a02de8dd1cc1d311fa" },
   "cmp-nvim-lsp": { "branch": "main", "commit": "5af77f54de1b16c34b23cba810150689a3a90312" },
   "cmp-path": { "branch": "main", "commit": "91ff86cd9c29299a64f968ebb45846c485725f23" },
@@ -13,8 +14,9 @@
   "neodev.nvim": { "branch": "main", "commit": "be6bf4f5d2d3b173c9291f074130a3d29e1af78a" },
   "nvim-autopairs": { "branch": "master", "commit": "0f04d78619cce9a5af4f355968040f7d675854a1" },
   "nvim-cmp": { "branch": "main", "commit": "538e37ba87284942c1d76ed38dd497e54e65b891" },
-  "nvim-lspconfig": { "branch": "master", "commit": "e50a8fcd6267cb9b2d2a880dcf3a8ac113b75abc" },
+  "nvim-lspconfig": { "branch": "master", "commit": "eb81c7ea08d6f01d5fa4cf09e58c708efadf9b2f" },
   "nvim-treesitter": { "branch": "master", "commit": "25ddfde8d7167d7d81403d6809242439037d2b68" },
+  "nvim-ts-context-commentstring": { "branch": "main", "commit": "1277b4a1f451b0f18c0790e1a7f12e1e5fdebfee" },
   "nvim-ufo": { "branch": "main", "commit": "a15944ff8e3d570f504f743d55209275ed1169c4" },
   "nvim-web-devicons": { "branch": "master", "commit": "a1425903ab52a0a0460622519e827f224e5b4fee" },
   "playground": { "branch": "master", "commit": "ba48c6a62a280eefb7c85725b0915e021a1a0749" },
@@ -22,6 +24,7 @@
   "promise-async": { "branch": "main", "commit": "94f6f03c6c1e2aab551aacdf0c1e597a7269abb6" },
   "telescope.nvim": { "branch": "master", "commit": "6213322ab56eb27356fdc09a5078e41e3ea7f3bc" },
   "tokyonight.nvim": { "branch": "main", "commit": "f247ee700b569ed43f39320413a13ba9b0aef0db" },
+  "vim-blade": { "branch": "master", "commit": "9534101808cc320eef003129a40cab04b026a20c" },
   "vim-tmux-navigator": { "branch": "master", "commit": "7db70e08ea03b3e4d91f63713d76134512e28d7e" },
   "vim-vsnip": { "branch": "master", "commit": "8eebdf6ab4a880d845893f210fd20516d2e2384f" },
   "which-key.nvim": { "branch": "main", "commit": "4433e5ec9a507e5097571ed55c02ea9658fb268a" }
