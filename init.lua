@@ -12,6 +12,7 @@ require("plugins.general.lualine")
 require("plugins.general.treesitter")
 require("plugins.general.comment")
 
+require("plugins.lsp.dart")
 require("plugins.lsp.nvim-cmp")
 require("plugins.lsp.mason")
 require("plugins.lsp.lspconfig")

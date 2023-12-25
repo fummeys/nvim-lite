@@ -122,3 +122,5 @@ nvim_lsp.sqlls.setup({
 nvim_lsp.intelephense.setup({
 	capabilities = capabilities
 })
+
+nvim_lsp.jdtls.setup({})

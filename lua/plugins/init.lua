@@ -54,10 +54,21 @@ require("lazy").setup({
 	},
 	"jwalton512/vim-blade",
 
+
 	"christoomey/vim-tmux-navigator",
 	"kdheepak/lazygit.nvim",
 	{ "windwp/nvim-autopairs", config = function()
 		require("nvim-autopairs").setup({})
 		end
 	},
+
+	{
+		'akinsho/flutter-tools.nvim',
+		lazy = false,
+		dependencies = {
+			'nvim-lua/plenary.nvim',
+			'stevearc/dressing.nvim', -- optional for vim.ui.select
+		},
+		config = true,
+	}
 })
