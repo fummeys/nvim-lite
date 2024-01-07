@@ -21,13 +21,8 @@ require("lazy").setup({
 	"nvim-telescope/telescope.nvim",
 
 	{"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"},
-	'nvim-treesitter/playground',
-
-	"kevinhwang91/nvim-ufo",
 
 	"nvim-lualine/lualine.nvim",
-
-	"folke/neodev.nvim",
 
 	"folke/tokyonight.nvim",
 
