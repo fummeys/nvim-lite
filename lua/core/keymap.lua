@@ -31,6 +31,7 @@ keymap.set("x", "<leader>p", '"_dp')
 
 
 keymap.set("n", "<leader>e", ":E<CR>")
+keymap.set("n", "<leader>E", ":Rex<CR>")
 keymap.set("n", "<leader>gl", ":LazyGit<CR>")
 
 keymap.set("n", "]d", "<cmd>Lspsaga diagnostic_jump_next<CR>", { silent = true })
