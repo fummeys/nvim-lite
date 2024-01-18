@@ -27,6 +27,7 @@ require("lazy").setup({
 	'hrsh7th/cmp-nvim-lsp',
 	"hrsh7th/cmp-buffer",
 	"hrsh7th/cmp-path",
+	'saadparwaiz1/cmp_luasnip',
 	"onsails/lspkind.nvim",
 	"numToStr/Comment.nvim",
 	"JoosepAlviste/nvim-ts-context-commentstring",
