@@ -23,7 +23,5 @@ opt.foldlevelstart = 99
 opt.foldenable = true
 
 vim.cmd([[set cursorline ]])
-vim.cmd([[ set foldmethod=expr]])
-vim.cmd([[ set foldexpr=nvim_treesitter#foldexpr() ]])
 vim.g.skip_ts_context_commentstring_module = true
 

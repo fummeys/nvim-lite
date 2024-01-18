@@ -1,5 +1,7 @@
 local cmp = require("cmp")
 local cmp_autopairs = require('nvim-autopairs.completion.cmp')
+require("luasnip.loaders.from_vscode").lazy_load()
+
 
 vim.opt.completeopt = "menu,menuone,noselect"
 
@@ -8,7 +10,7 @@ local lspkind = require("lspkind")
 cmp.setup({
 	snippet = {
 		expand = function(args)
-			vim.fn["vsnip#anonymous"](args.body)
+			require('luasnip').lsp_expand(args.body)
 		end,
 	},
 	mapping = cmp.mapping.preset.insert({
@@ -25,7 +27,7 @@ cmp.setup({
 		{ name = "nvim_lsp" }, -- lsp
 		{ name = "buffer" }, -- text within current buffer
 		{ name = "path" }, -- file system paths
-		{ name = "vsnip" },
+		{ name = "luasnip" },
 	}),
 	-- configure lspkind for vs-code like icons
 	formatting = {
