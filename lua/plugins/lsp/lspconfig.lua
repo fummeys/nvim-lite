@@ -136,3 +136,7 @@ nvim_lsp.intelephense.setup({
 })
 
 nvim_lsp.jdtls.setup({})
+
+nvim_lsp.tailwindcss.setup({
+	capabilities = capabilities
+})

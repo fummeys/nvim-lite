@@ -17,7 +17,10 @@ require("lazy").setup({
 	"nvim-tree/nvim-web-devicons",
 	"folke/which-key.nvim",
 	"nvim-telescope/telescope.nvim",
-	{ "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
+	{
+		"nvim-treesitter/nvim-treesitter",
+		build = ":TSUpdate"
+	},
 	"nvim-lualine/lualine.nvim",
 	"folke/tokyonight.nvim",
 	"neovim/nvim-lspconfig",
