@@ -68,7 +68,7 @@ nvim_lsp.nginx.setup({
 
 nvim_lsp.html.setup({
 	capabilities = capabilities,
-	filetypes = { "html", "blade", "php"}
+	filetypes = { "html", "blade" }
 })
 
 nvim_lsp.cssls.setup({
