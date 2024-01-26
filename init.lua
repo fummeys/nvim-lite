@@ -10,6 +10,7 @@ require("plugins.general.telescope")
 require("plugins.general.lualine")
 require("plugins.general.treesitter")
 require("plugins.general.comment")
+require("plugins.general.fidget")
 
 require("plugins.lsp.dart")
 require("plugins.lsp.nvim-cmp")

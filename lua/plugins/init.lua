@@ -71,5 +71,6 @@ require("lazy").setup({
 		-- install jsregexp (optional!).
 		build = "make install_jsregexp",
 		dependencies = { "rafamadriz/friendly-snippets" }
-	}
+	},
+	"j-hui/fidget.nvim",
 })
