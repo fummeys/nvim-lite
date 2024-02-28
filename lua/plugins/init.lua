@@ -37,7 +37,11 @@ require("lazy").setup({
     {
         'nvimdev/lspsaga.nvim',
         config = function()
-            require('lspsaga').setup({})
+            require('lspsaga').setup({
+                ui = {
+                    code_action = '󰛨'
+                }
+            })
         end
     },
     "jwalton512/vim-blade",
