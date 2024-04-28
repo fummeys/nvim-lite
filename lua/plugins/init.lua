@@ -54,15 +54,6 @@ require("lazy").setup({
         end
     },
     {
-        'akinsho/flutter-tools.nvim',
-        lazy = false,
-        dependencies = {
-            'nvim-lua/plenary.nvim',
-            'stevearc/dressing.nvim', -- optional for vim.ui.select
-        },
-        config = true,
-    },
-    {
         'kevinhwang91/nvim-ufo',
         dependencies = {
             'kevinhwang91/promise-async'
